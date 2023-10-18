@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.background {
+  background-color: #c3cfe2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.background .testimonial {
+  width: 500px;
+  height: 90vh;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 5px 5px 5px 5px;
+  margin-top: 30px;
+}
+.background .testimonial .profilepic {
+  border-radius: 50%;
+  width: 30%;
+  position: absolute;
+  border: 10px solid #fff;
+  top: 60%;
+  left: 35%;
+}
+.background .testimonial .top-section {
+  margin: 10px 10px 0px 10px;
+  height: 70%;
+}
+.background .testimonial .top-section p {
+  font-size: 2rem;
+  padding: 5%;
+  line-height: 150%;
+}
+.background .testimonial footer {
+  height: 30%;
+  background-color: #686de0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 10%;
+}
+.background .testimonial footer h1, .background .testimonial footer h4 {
+  text-align: center;
+  color: white;
+}
+.background .testimonial footer h1 {
+  padding-top: 20%;
+  padding-bottom: 3%;
+}
+
+.portfolio {
+  background-color: #c3cfe2;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  justify-content: center;
+}
+.portfolio .view {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .view .pic {
+  border-radius: 10px;
+  width: 100%;
+  transition: background-color 1500ms;
+  position: relative;
+}
+.portfolio .view .pic:hover + button {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+}
+.portfolio .view button {
+  display: none;
+  opacity: 0.4;
+  position: absolute;
+  color: black;
+}
+.portfolio .view button:hover {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+  background-color: #686de0;
+}
+.portfolio .view:hover .pic {
+  background-color: white;
+  opacity: 0.3;
+}
+
+@media (min-width: 725px) {
+  .portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1150px) {
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.design {
+  width: 100%;
+  height: 100vh;
+  background-color: #c3cfe2;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.design .social {
+  display: inline;
+  padding: 20px;
+  text-decoration: underline;
+  color: white;
+  float: right;
+  width: 240px;
+  padding-left: 0;
+  transform: translateX(180px);
+  transition: 500ms;
+  transition-property: transform;
+  clear: right;
+}
+.design .social::before {
+  font-weight: 900;
+  padding: 23px;
+  color: white;
+}
+.design .social:hover {
+  transform: translateX(0px);
+  cursor: pointer;
+}
+.design .blog {
+  background-color: #e17b77;
+}
+.design .blog::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f5fc";
+}
+.design .facebook {
+  background-color: #3b5998;
+}
+.design .facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+}
+.design .twitter {
+  background-color: #00aced;
+}
+.design .twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+.design .github {
+  background-color: #333;
+}
+.design .github::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+}
+.design .linkedin {
+  background-color: #007bb6;
+  margin-bottom: 30px;
+}
+.design .linkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}/*# sourceMappingURL=style.css.map */

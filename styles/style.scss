@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@import "./testimonial";
+@import "./portfolio\ grid";
+@import "./social\ media\ buttons";
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

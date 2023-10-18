@@ -1,0 +1,53 @@
+
+.background {
+    background-color: #c3cfe2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .testimonial{
+        width: 500px;
+        height: 90vh;
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 5px 5px 5px 5px;
+        margin-top: 30px;
+
+        .profilepic {
+            border-radius: 50%;
+            width: 30%;
+            position: absolute;
+            border: 10px solid #fff;
+            top: 60%;
+            left: 35%;
+        }
+        .top-section {
+            margin: 10px 10px 0px 10px;
+            height: 70%;
+
+            p {
+                font-size: 2rem;
+                padding: 5%;
+                line-height: 150%;
+            }
+        }
+        footer {
+            height: 30%;
+            background-color: #686de0;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-bottom: 10%;
+
+            h1, h4 {
+                text-align: center;
+                color: white;
+            }
+
+            h1 {
+                padding-top: 20%;
+                padding-bottom: 3%;
+             }
+        }
+    }
+}

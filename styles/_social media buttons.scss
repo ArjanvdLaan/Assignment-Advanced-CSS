@@ -1,0 +1,71 @@
+
+.design {
+    @include flexCenter();
+    width: 100%;
+    height: 100vh;
+    background-color: #c3cfe2;
+    flex-direction: column;
+
+    .social  {
+        display: inline;
+        padding: 20px;
+        text-decoration: underline;
+        color: white;
+        float: right;
+        width: 240px;
+        padding-left: 0;
+        transform: translateX(180px);
+        transition: 500ms;
+        transition-property: transform;
+        clear: right;
+
+        &::before {
+            font-weight: 900; 
+            padding: 23px;
+            color: white;
+        
+        }
+    
+        &:hover {
+            transform: translateX(0px);
+            cursor: pointer;
+        }
+    }
+
+    .blog {
+        background-color: #e17b77;
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f5fc";
+        }
+    }
+    .facebook {
+        background-color: #3b5998;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            content: "\f09a";
+        }
+    }
+    .twitter {
+        background-color: #00aced;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            content: "\f099";
+        }
+    }
+    .github {
+        background-color: #333;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            content: "\f09b";
+        }
+    }
+    .linkedin {
+        background-color: #007bb6;
+        margin-bottom: 30px;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            content: "\f0e1";
+        }
+    }
+}

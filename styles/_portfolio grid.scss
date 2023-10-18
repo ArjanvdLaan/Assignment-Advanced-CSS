@@ -1,0 +1,58 @@
+
+.portfolio {
+    background-color: #c3cfe2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    justify-content: center;
+
+    .view {
+        @include flexCenter;
+        height: auto;
+
+        .pic {
+            border-radius: 10px;
+            width: 100%;
+            transition: background-color 1500ms; 
+            position: relative;
+
+            &:hover + button {
+                display: block;
+                opacity: 1;
+                cursor: pointer;   
+            }
+        }
+        button {
+            display: none;
+            opacity: 0.4;
+            position: absolute;
+            color: black;
+
+            &:hover {
+                display: block;
+                opacity: 1;
+                cursor: pointer;
+                background-color: #686de0;
+            }
+        }
+        &:hover .pic  {
+            background-color: white; opacity: 0.3;
+        }
+    }
+}
+
+@media (min-width: 725px) {
+    .portfolio {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1150px) {
+    .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
